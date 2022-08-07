@@ -48,7 +48,7 @@ function Work(){
 
       <a href='https://www.figma.com/file/lVGuG4aq32pY9JwAIohoCq/D%C3%B6te?node-id=0%3A1'>
         <div className={`cover ${visibility.dote1 ? "" : "hidden"}`}>
-          <p> Dote </p>
+          <p> Döte </p>
         </div>
         <img className="doteproject" src='https://i.ibb.co/Yhd3BQB/Screen-Shot-2022-08-05-at-9-10-40-AM.png' alt='Döte, a redistribution project' />
       </a>
@@ -61,7 +61,7 @@ function Work(){
 
       <a href='https://docs.google.com/presentation/d/1LYarMgynbX7iO-xfJGA7HtgOiCpxF7-09lF-Iyd1uOI/edit#slide=id.p'>
         <div className={`cover ${visibility.dote2 ? "" : "hidden"}`}>
-          <p> Dote </p>
+          <p> Döte </p>
         </div>
       <img className="projects" src='https://i.ibb.co/7YjD6zG/Screen-Shot-2022-08-04-at-5-07-47-PM.png' alt='Döte, a redistribution project' />
       </a>
