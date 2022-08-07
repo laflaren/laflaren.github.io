@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');   
+
+*{
+  font-family: "Roboto", sans-serif;
+
+}
 .App {
   text-align: center;
+  
+}
+body{
+  font-family: "Roboto", sans-serif;
+  background-color: #fff8e7;
 }
 
 .App-logo {
-  height: 40vmin;
+  max-height: 40px;
   pointer-events: none;
 }
 
@@ -13,20 +24,50 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
+  justify-content: space-between;
+
+}
+.title {
+  max-width: 50vw;
+  text-align: center;
+
+}
+.logo-and-title{
+  padding: 3%;
+  
+}
+.frontendeng {
+  font-size: 20px;
+}
+
+.menubutton {
+  display: flex;
+  justify-content: center;  
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding: 5%;
+}
+
+.menubutton button {
+  background-color: rgb(3,39,157);
+  border-radius: 3px;
+  border-width: 0ch;
+  min-width: 70px;
+  margin: 5px;
 }
 
 .App-link {
-  color: #61dafb;
+  color: rgb(97,218,251);
 }
+/* deep blue form font 3,39,157 */
+/* light blue from font 25,178,227 */
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +77,74 @@
     transform: rotate(360deg);
   }
 }
+
+.projects {
+  padding: 10px;
+  max-width: 300px;;
+  opacity: 1;
+  transition: opacity 1000ms cubic-bezier(.33,0,.2,1);
+  border-radius: 4px;
+}
+.gif{
+  border-radius: 5%;
+  max-height: 650px;
+}
+
+.doteproject{
+  max-width: 200px;
+}
+
+
+.work{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.work .work-item {
+  width: 400px;
+  /* background-color:blueviolet; */
+  height: 300px; 
+  margin: 1%;
+  overflow: hidden;
+  /* border: solid 10px;
+  border-color: rgb(25,178,227); */
+  border-radius: 15px; 
+  position: relative;
+}
+
+.work .cover {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+}
+
+.work .cover:hover{
+  opacity: .9;
+  /* font-size: 10%; */
+  /* background-color:blue; */
+  background-color: yellow;
+  opacity: 0.9;
+}
+
+.work div p{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: large;
+  transform: translate(-50%, -50%);
+  display: hidden;
+}
+.work div p:hover{
+  display: initial;
+}
+.leftalignfooter{
+  display: flex;
+  text-align: left;
+  padding: 4%;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+

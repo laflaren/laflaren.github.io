@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Work from './components/Work';
+import React from 'react';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import About from './components/About';
 
 function App() {
+
+  const [selectedPage, setSelectedPage] = useState("Work")
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <BrowserRouter> 
+      <Header />
+    <Routes> 
+      <Route path='/' element={<Work />} exact />
+      <Route path='/about' element={<About />} />
+      
+    </Routes>
+    </BrowserRouter>
+    
+      {/* {selectedPage === "Work" ? <Work /> : <About /> } */}
+
+      <Footer year={new Date().getFullYear()} />
+
     </div>
   );
 }
