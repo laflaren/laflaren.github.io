@@ -2,7 +2,6 @@
 
 *{
   font-family: "Roboto", sans-serif;
-
 }
 .App {
   text-align: center;
@@ -80,7 +79,7 @@ a:active { text-decoration: none; }
 
 .projects {
   padding: 10px;
-  max-width: 300px;;
+  max-width: 370px;;
   opacity: 1;
   transition: opacity 1000ms cubic-bezier(.33,0,.2,1);
   border-radius: 4px;
@@ -113,28 +112,33 @@ a:active { text-decoration: none; }
   position: relative;
 }
 
-.work .cover {
+.cover {
   width: 100%;
   height: 100%;
-
   position: absolute;
-}
-
-.work .cover:hover{
-  opacity: .9;
-  /* font-size: 10%; */
-  /* background-color:blue; */
-  background-color: yellow;
+  background-color: rgb(3,39,157);
   opacity: 0.9;
 }
 
-.work div p{
+/* .work .cover:hover{
+  opacity: .9;
+  /* font-size: 10%; */
+  /* background-color:blue;
+  background-color: rgb(3,39,157);
+  opacity: 0.9;
+} */
+
+.hidden{
+  visibility: hidden;
+}
+
+.work-item p{
+  color: white;
   position: absolute;
   left: 50%;
   top: 50%;
   font-size: large;
   transform: translate(-50%, -50%);
-  display: hidden;
 }
 .work div p:hover{
   display: initial;
