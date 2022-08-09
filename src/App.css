@@ -41,20 +41,17 @@ body{
   font-size: 20px;
 }
 
-.menubutton {
+.btn btn-outline-success {
   display: flex;
   justify-content: center;  
   flex-direction: column;
-  color: white;
   padding: 5%;
 }
 
 .menubutton button {
-  background-color: rgb(3,39,157);
-  border-radius: 3px;
   border-width: 0ch;
-  min-width: 70px;
-  margin: 5px;
+  min-width: 100px;
+  margin: 10px;
 }
 
 .App-link {
@@ -118,6 +115,7 @@ a:active { text-decoration: none; }
   position: absolute;
   background-color: rgb(3,39,157);
   opacity: 0.9;
+  transition: opacity 300ms cubic-bezier(.33,0,.2,1);
 }
 
 /* .work .cover:hover{
@@ -133,6 +131,7 @@ a:active { text-decoration: none; }
 }
 
 .work-item p{
+  font-size: 100px;
   color: white;
   position: absolute;
   left: 50%;
@@ -143,6 +142,25 @@ a:active { text-decoration: none; }
 .work div p:hover{
   display: initial;
 }
+
+.aboutimg{
+  border-radius: 400px;
+  border-style: solid;
+  border-color: green;
+  border-width: 20px;
+  margin: 11%;
+}
+
+.aboutimg img{
+  border-radius: 400px;
+  filter: saturate(0%); 
+  max-width: 90%;
+}
+.aboutcontainer{
+  display: flex;
+  justify-content: center;
+}
+
 .leftalignfooter{
   display: flex;
   text-align: left;
@@ -150,5 +168,8 @@ a:active { text-decoration: none; }
   flex-direction: row;
   justify-content: left;
   align-items: center;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
-

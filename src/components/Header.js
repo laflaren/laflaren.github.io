@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header(){
   return(
@@ -14,18 +14,24 @@ function Header(){
       </div>
         
           
-      <div className='menubutton'> 
-      {/* <ul> */}
-        <button type="button" className='workbtn'> Work
+    <div className='menubutton'> 
+    <ul>
+    <div className='work'>
+      <Link to='/'> 
+        <button type="button" className="btn btn-outline-success"> Work
         </button>
-        {/* <div className='work'>
-        </div>
-        <div className='about'>
-        </div> */}
-      <button type="button" className='aboutbtn'> About
-      </button>
+      </Link>
+    </div>
+
+    <div className='about'>
+      <Link to='/about'>
+        <button type="button" className="btn btn-outline-success"> About
+        </button>
+      </Link>
+    </div>
+
       
-       {/* </ul> */}
+       </ul>
 
        </div>
     </div>
