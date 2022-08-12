@@ -13,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      <div>
      <BrowserRouter> 
       <Header />
     <Routes> 
@@ -21,7 +22,7 @@ function App() {
       
     </Routes>
     </BrowserRouter>
-    
+    </div>
       {/* {selectedPage === "Work" ? <Work /> : <About /> } */}
 
       <Footer year={new Date().getFullYear()} />

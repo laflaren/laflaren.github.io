@@ -6,10 +6,12 @@ function Footer(props){
         {/* <button type="button" className="btn btn-outline-success">
             Get in touch
         </button> */}
-        <div className="leftalignfooter"> 
+        <div> 
+          <footer>
         <img src={logo} className="App-logo" alt= "React.js logo rotating slowly" />
 
-        <p className="leftalignfooter"> ©{props.year} All rights reserved to Natalie L. </p>
+        <p> ©{props.year} All rights reserved to Natalie L. </p>
+        </footer>
         </div>
     </div>
   )

@@ -1,4 +1,3 @@
-import {Link} from 'react-router-dom';
 
 function About(){
   return(
@@ -9,26 +8,21 @@ function About(){
 <br />
 • React.JS • Bootstrap • Figma • WCAG • Backend • 
 <br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
+<div className='lilblurb'>
 📍 Austin, TX <br /> 
-🎓 Southwestern University, Sociology, Business
+🎓 Southwestern University, Sociology
 
-<br /> <br />
-<button type="button" className="btn btn-outline-success"> Contact </button>
-
+<br /> 
+<button type="button" className="btn btn-outline-success" action="mailto:email.com?subject=subject&message=message"> Contact </button>
+</div>
 </div>
 </p>
-<div className='aboutimg'>
-<img src='https://i.pinimg.com/564x/af/77/36/af7736f92809842dd3ac8d6fab4130a3.jpg' alt='image of natalie l tilting her head and winking with a tea cup in her hand' />
+
+<div>
+<div className='aboutborder'>
+
+<img src='https://avatars.githubusercontent.com/u/69825896?v=4' alt='natalie l tilting her head and winking with a tea cup in her hand' />
+</div>
 </div>
 </div>
 );
